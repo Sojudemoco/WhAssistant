@@ -1,0 +1,31 @@
+{
+  "name": "Nuevo Mensaje",
+  "description": "Herramienta para agregar numeros, copiarlos al portapapeles, y facilitar la captura de datos para BO by -Delta Lorne",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/wha_16.png",
+      "32": "/images/wha_32.png",
+      "48": "/images/wha_48.png",
+      "128": "/images/wha_128.png"
+    }
+  },
+  "content_scripts" : [
+        {
+            "js" : ["init.js"],
+            "matches" : ["*://whatsapp.com/"]
+        }
+    ],
+  "icons": {
+    "16": "/images/wha_16.png",
+    "32": "/images/wha_32.png",
+    "48": "/images/wha_48.png",
+    "128": "/images/wha_128.png"
+  }
+}
