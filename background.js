@@ -26,3 +26,5 @@ function sendwaf() {
 
     //notif();
   }
+// console.log(document.getElementsByClassName("_21nHd")[0].childNodes[0].innerHTML)
+// console.log(document.querySelector("#main > header > div._24-Ff > div > div > span").textContent);
